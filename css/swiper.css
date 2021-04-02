@@ -1,0 +1,105 @@
+/* TOP SLIDER */
+.top-slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.top-slider-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.top-slide {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TOP SLIDER */
+
+/* Bottom slider */
+.bottom-slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bottom-slider-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-slide {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Bottom slider */
+
+/* SLIDER ARROWS */
+.slider-next,
+.slider-prev {
+    transition: all .3s ease-in;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    width: 60px;
+    height: 75px;
+    top: 35%;
+    outline: none;
+}
+
+.slider-next:hover,
+.slider-prev:hover {
+    opacity: 0.5;
+}
+
+.slider-next {
+    right: 0;
+    border-radius: 54px 0 0 54px;
+}
+
+.slider-next img {
+    transform: rotate(180deg);
+    margin-left: 17px;
+}
+
+.slider-prev {
+    left: 0;
+    justify-content: flex-end;
+    border-radius: 0 54px 54px 0;
+}
+
+.slider-prev img {
+    margin-right: 17px;
+}
+
+/* SLIDER ARROWS */
+
+.bottom-slider-container .slider-next,
+.slider-prev {
+    top: 40%;
+}
+
+@media screen and (max-width:992px) {
+
+    .slider-next,
+    .slider-prev {
+        width: 35px;
+        height: 50px;
+    }
+    .slider-prev img {
+        margin-right: 15px;
+        width: 10px;
+    }
+    .slider-next img {
+        margin-left: 15px;
+        width: 10px;
+    }
+}
